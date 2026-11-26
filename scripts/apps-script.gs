@@ -10,6 +10,7 @@
  * Project Settings → Script properties:
  *   SITE_URL           e.g. https://ai-optimization.example.com
  *   REVALIDATE_SECRET  same value as the website env var
+ *   DECK_ID            the deck's id (used by the every-minute trigger)
  * Run installTrigger() once and approve the permissions.
  */
 
@@ -24,7 +25,12 @@ function publishNow() {
 
 function checkForChanges() {
   const props = PropertiesService.getScriptProperties();
-  const id = SlidesApp.getActivePresentation ? SlidesApp.getActivePresentation().getId() : props.getProperty('DECK_ID');
+  let id = props.getProperty('DECK_ID');
+  if (!id) {
+    const deck = SlidesApp.getActivePresentation();
+    if (!deck) throw new Error('Set the DECK_ID script property.');
+    id = deck.getId();
+  }
   const updated = DriveApp.getFileById(id).getLastUpdated().getTime();
   const last = Number(props.getProperty('LAST_SEEN') || 0);
   if (updated > last) {
