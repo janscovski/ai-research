@@ -52,5 +52,7 @@ function ping_() {
     headers: { 'x-revalidate-secret': props.getProperty('REVALIDATE_SECRET') },
     muteHttpExceptions: true,
   });
-  return res.getResponseCode();
+  const code = res.getResponseCode();
+  console.log('Website refresh: HTTP ' + code);
+  return code;
 }
