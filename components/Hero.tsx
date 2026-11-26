@@ -17,7 +17,7 @@ export function Hero({ b }: { b: BlockOf<"hero"> }) {
       <div className="relative mx-auto flex h-full max-w-[1440px] flex-col items-center px-5 pt-[16svh] text-center md:px-12 md:pt-[14svh]">
         <h1
           id="hero-title"
-          className="hero-title max-w-[16ch] text-[clamp(2.6rem,min(7.6vw,13vh),8rem)] font-semibold leading-[0.95] tracking-[-0.035em]"
+          className="hero-title max-w-[16ch] text-text [text-shadow:0_4px_40px_rgb(0_0_40/0.45)] text-[clamp(2.6rem,min(7.6vw,13vh),8rem)] font-semibold leading-[0.95] tracking-[-0.035em]"
         >
           {b.title}
         </h1>

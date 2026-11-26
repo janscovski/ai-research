@@ -36,6 +36,7 @@ export default async function Page() {
       title={heroOf(r)?.title ?? SITE_NAME}
       labels={frames.map((f) => f.label)}
       preload={frames.map((f) => f.preload)}
+      themes={frames.map((f) => f.theme ?? { tone: "blue" })}
       footer={
         <p className="text-xs text-faint">
           {r.stale ? "Cached" : "Synced"} {synced} WIB

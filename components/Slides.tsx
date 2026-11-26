@@ -2,9 +2,13 @@ import type { ReactNode } from "react";
 import type { BlockOf, Card, Chapter, Deck } from "@/lib/schema";
 import { CountUp } from "./CountUp";
 import { DeckImg } from "./DeckImg";
+import { Laptop } from "./Laptop";
 import { Plate } from "./Plate";
 import { Reveal } from "./Reveal";
 import { StageBars } from "./StageBars";
+import { SavingStats } from "./SavingStats";
+import { TeamCard } from "./TeamCard";
+import { itemNote } from "@/lib/annotations";
 import { TechCard } from "./TechCard";
 import { Hero } from "./Hero";
 import { Closing as ClosingLine } from "./Closing";
@@ -14,8 +18,12 @@ import { Closing as ClosingLine } from "./Closing";
  * slide when it carries more than fits a screen (e.g. investment: figures,
  * savings, tool tables). Every word comes from the deck.
  */
+/** Background mood for a slide: colour family, and whether the hi-tech code layer runs. */
+export type Theme = { tone: "blue" | "purple" | "green"; code?: boolean };
+
 export interface Frame {
   id: string;
+  theme?: Theme;
   label: string; // for the slide's accessible name
   node: ReactNode;
   preload: string[]; // image URLs to warm up before this slide shows
@@ -94,12 +102,12 @@ function objectiveSlides(c: Chapter, b: BlockOf<"objective">): Omit<Frame, "id">
             {b.roles.length > 0 && (
               <div className="grid gap-4 md:grid-cols-2">
                 {b.roles.map((r, i) => (
-                  <TechCard key={r.team} delay={0.3 + i * 0.25} className="p-7 md:p-9">
+                  <TeamCard key={r.team} team={r.team} className="p-7 md:p-9">
                     <p className="label">{r.team}</p>
                     <p className="mt-[clamp(1.25rem,4vh,2.5rem)] text-[clamp(1.75rem,min(3.4vw,5.5vh),3.2rem)] font-light leading-[1.05] tracking-[-0.025em] text-text">
                       {r.role}
                     </p>
-                  </TechCard>
+                  </TeamCard>
                 ))}
               </div>
             )}
@@ -123,23 +131,14 @@ function investmentSlides(c: Chapter, b: BlockOf<"investment">): Omit<Frame, "id
       ),
     });
   }
-  const stats = [b.reduction, b.saving].filter(Boolean) as { label: string; value: string }[];
-  if (stats.length) {
+  if (b.reduction || b.saving) {
+    const final = b.stages.length ? b.stages[b.stages.length - 1] : undefined;
     out.push({
-      label: stats.map((s) => s.label).join(", "),
+      label: [b.reduction, b.saving, final].filter(Boolean).map((s) => s!.label).join(", "),
       preload: [],
       node: (
         <Slide kicker={c.kicker}>
-          <div className="grid gap-4 md:grid-cols-2">
-            {stats.map((s, i) => (
-              <TechCard key={s.label} delay={i * 0.25} className="flex flex-col justify-between p-7 md:min-h-[38vh] md:p-10">
-                <p className="label">{s.label}</p>
-                <p className="mt-10 text-[clamp(3.25rem,min(7.5vw,13vh),8rem)] font-extralight leading-none tracking-[-0.04em] text-accent">
-                  <CountUp raw={s.value} duration={2} />
-                </p>
-              </TechCard>
-            ))}
-          </div>
+          <SavingStats reduction={b.reduction} saving={b.saving} final={final} />
         </Slide>
       ),
     });
@@ -150,9 +149,9 @@ function investmentSlides(c: Chapter, b: BlockOf<"investment">): Omit<Frame, "id
       preload: [],
       node: (
         <Slide kicker={c.kicker} title={b.allocationLabel}>
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid items-start gap-4 md:grid-cols-2">
             {b.teams.map((t, ti) => (
-              <TechCard key={t.name} delay={ti * 0.25} className="overflow-hidden">
+              <TeamCard key={t.name} team={t.name} className="overflow-hidden">
                 <table className="w-full text-left text-[clamp(1rem,min(1.15vw,2.1vh),1.2rem)]">
                   <caption className="sr-only">
                     {t.name} {t.total}
@@ -172,7 +171,9 @@ function investmentSlides(c: Chapter, b: BlockOf<"investment">): Omit<Frame, "id
                       <tr key={it.name} className="border-b border-line last:border-0">
                         <th scope="row" className="px-6 py-[clamp(0.6rem,1.6vh,1rem)] font-normal text-text md:px-8">
                           {it.name}
-                          {it.note && <span className="mt-0.5 block text-[0.85em] text-faint">{it.note}</span>}
+                          {(it.note ?? itemNote(it.name)) && (
+                            <span className="mt-0.5 block text-[0.85em] text-faint">{it.note ?? itemNote(it.name)}</span>
+                          )}
                         </th>
                         <td className="num whitespace-nowrap px-6 text-right text-muted md:px-8">{it.amount}</td>
                       </tr>
@@ -180,7 +181,7 @@ function investmentSlides(c: Chapter, b: BlockOf<"investment">): Omit<Frame, "id
                   </tbody>
                   {t.total && (
                     <tfoot>
-                      <tr className="border-t border-line-strong bg-raised/70">
+                      <tr className="border-t border-line-strong bg-black/20">
                         <th scope="row" className="label px-6 py-[clamp(0.8rem,2vh,1.25rem)] md:px-8">
                           Total
                         </th>
@@ -189,7 +190,7 @@ function investmentSlides(c: Chapter, b: BlockOf<"investment">): Omit<Frame, "id
                     </tfoot>
                   )}
                 </table>
-              </TechCard>
+              </TeamCard>
             ))}
           </div>
         </Slide>
@@ -205,6 +206,7 @@ function useCaseSlides(c: Chapter, b: BlockOf<"usecases">): Omit<Frame, "id">[] 
   if (b.target || b.outputs.length) {
     out.push({
       label: title ?? "Use cases",
+      theme: { tone: "purple" },
       preload: [],
       node: (
         <Slide kicker={c.kicker} title={title}>
@@ -240,6 +242,7 @@ function useCaseSlides(c: Chapter, b: BlockOf<"usecases">): Omit<Frame, "id">[] 
   if (b.supporting.length) {
     out.push({
       label: b.supportingTitle ?? "Supporting system",
+      theme: { tone: "green" },
       preload: [],
       node: (
         <Slide kicker={c.kicker} title={b.supportingTitle}>
@@ -260,6 +263,7 @@ function useCaseSlides(c: Chapter, b: BlockOf<"usecases">): Omit<Frame, "id">[] 
   if (b.cases.length) {
     out.push({
       label: title ?? "Use cases",
+      theme: { tone: "blue" },
       preload: [],
       node: (
         <Slide kicker={c.kicker} title={title}>
@@ -330,15 +334,17 @@ function efficiencySlides(c: Chapter, b: BlockOf<"efficiency">): Omit<Frame, "id
                     {b.tiers.map((t, i) => {
                       const fill = TIER_FILL[t.level.toUpperCase()] ?? i + 1;
                       return (
-                        <TechCard key={t.level} delay={0.3 + i * 0.2} className="p-6">
+                        <div key={t.level} className="glow-card is-tier p-6" style={{ ["--tier-delay" as string]: `${i * 0.6}s` }}>
                           <div aria-hidden className="mb-[clamp(1.25rem,4vh,2.5rem)] flex gap-1.5">
                             {Array.from({ length: Math.max(3, b.tiers.length) }, (_, k) => (
-                              <span key={k} className={`h-[3px] flex-1 rounded-full ${k < fill ? "bg-accent" : "bg-line-strong"}`} />
+                              <span key={k} className="relative h-[3px] flex-1 overflow-hidden rounded-full bg-line-strong">
+                                {k < fill && <span className="tier-seg" style={{ ["--seg" as string]: k }} />}
+                              </span>
                             ))}
                           </div>
                           <p className="text-base font-semibold tracking-[0.16em] text-text">{t.level}</p>
                           <p className="mt-1.5 text-[clamp(1.1rem,min(1.5vw,2.6vh),1.5rem)] font-light text-muted">{t.use}</p>
-                        </TechCard>
+                        </div>
                       );
                     })}
                   </div>
@@ -351,14 +357,9 @@ function efficiencySlides(c: Chapter, b: BlockOf<"efficiency">): Omit<Frame, "id
               ))}
             </div>
             {hasImage && (
-              <TechCard as="figure" delay={0.3} className="overflow-hidden p-2 lg:col-span-8">
-                <DeckImg
-                  image={b.image!}
-                  alt={b.image!.alt || b.headline || ""}
-                  sizes="(min-width: 1024px) 60vw, 100vw"
-                  className="h-auto max-h-[52vh] w-full rounded-[4px] object-contain object-left-top"
-                />
-              </TechCard>
+              <div className="lg:col-span-8">
+                <Laptop image={b.image!} alt={b.image!.alt || b.headline || ""} />
+              </div>
             )}
           </div>
         </Slide>
@@ -372,6 +373,7 @@ function actionPlanSlides(c: Chapter, b: BlockOf<"action_plan">): Omit<Frame, "i
   if (b.lab || b.prompts.length) {
     out.push({
       label: b.lab ?? b.promptLabel ?? "Action plan",
+      theme: { tone: "blue", code: true },
       preload: [],
       node: (
         <Slide kicker={c.kicker}>
@@ -424,7 +426,7 @@ function actionPlanSlides(c: Chapter, b: BlockOf<"action_plan">): Omit<Frame, "i
                   <span className="hidden md:inline">→</span>
                   <span className="md:hidden">↓</span>
                 </span>
-                <TechCard delay={0.4} className="flex items-end p-7 md:p-10">
+                <TechCard delay={0.4} className="flex items-center p-7 md:p-10">
                   <p className="text-[clamp(2rem,min(3.8vw,6.5vh),3.6rem)] font-light leading-[1.04] tracking-[-0.025em] text-accent">{b.flow.output}</p>
                 </TechCard>
               </div>
@@ -486,6 +488,7 @@ function verdictSlides(c: Chapter, b: BlockOf<"verdict">): Omit<Frame, "id">[] {
   if (b.closing) {
     out.push({
       label: b.closing,
+      theme: { tone: "blue", code: true },
       preload: [],
       node: (
         <div className="flex h-full items-center justify-center px-5">

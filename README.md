@@ -104,7 +104,7 @@ card: label | value | note
 
 | Section | Keys |
 |---|---|
-| any | `section`, `kicker`, `headline`, `card` (label \| value \| note), `alt` (image alt text), `focus` (image crop, CSS object-position like `20% 50%`) |
+| any | `section`, `kicker`, `headline`, `card` (label \| value \| note), `alt` (image alt text), `focus` (image crop, CSS object-position like `20% 50%`), `align` (`left`, `right` or `top`: where a divider's title sits; measured automatically from the image when absent) |
 | hero | `title`, `subtitle` |
 | divider | `title` |
 | objective | `pillar` (`·`-separated ok), `role` (team \| role) |
@@ -130,7 +130,7 @@ card: label | value | note
 
 ## 5. Swapping the background loop
 
-The default is a **WebGL shader** in `components/Background.tsx` (0 KB of assets). Every moving term is periodic in `2π·t / --bg-loop-seconds`, so the loop is **seamless by construction** and needs no crossfade. It renders at half resolution and 30 fps, pauses in hidden tabs, starts only after `load` + idle, and drifts slightly as the deck advances (the only parallax). It is replaced by a static CSS poster for `prefers-reduced-motion`, Save-Data and no-WebGL.
+The default is a **WebGL shader** in `components/Background.tsx` (0 KB of assets). Every moving term is periodic in `2π·t / --bg-loop-seconds`, so the loop is **seamless by construction** and needs no crossfade. It renders at half resolution and 30 fps, pauses in hidden tabs, starts only after `load` + idle, and drifts slightly as the deck advances (the only parallax). Layers: navy sky, aurora ribbons, horizon light, a perspective grid floor and twinkling stars. Each slide sets a mood (`theme` on its frame in `components/Slides.tsx`): colour family `blue`, `purple` or `green` (palettes are `--bg-*` tokens) and an optional hi-tech code-rain layer; the shader eases between moods on slide change. It is replaced by a static CSS poster for `prefers-reduced-motion`, Save-Data and no-WebGL.
 
 To use a pre-rendered loop instead:
 1. Export a loop that already crossfades its last ~1 s into its first frame (After Effects / Resolve). Keep it muted, ≤ 2 MB, 1280×720 is enough because it sits behind content.
@@ -156,6 +156,7 @@ Nothing below is filled in by the site. Each gap is either rendered as-is or hid
 - [ ] **Hero subtitle:** the brief mentions separate BD / Marrakesh role lines, but the cover has one line ("Business Development × Marrakesh Creative Powerhouse"). The roles appear in Objective.
 - [ ] **Verdict has no divider image**, so it opens typographically. Add a divider slide before it if you want a plate.
 - [ ] **Mobile crop:** on the "AI Optimization" plate the dollar bill sits at the far left and is cropped on phones. Add `focus: 15% 50%` to that divider slide's notes.
+- [ ] **Tool notes:** "Video AI Generated" (Higgsfield Ultra 3K) and "Voice Over" (ElevenLabs) come from Jan, not the deck, via `lib/annotations.ts`. A note in the deck row always wins; consider moving them into the deck.
 - [ ] The `<Todo>` placeholder component renders only if the cover slide loses its image.
 
 ## 8. Tests

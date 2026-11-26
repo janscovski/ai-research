@@ -1,5 +1,6 @@
 "use client";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import type { Theme } from "./Slides";
 import { Children, useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -14,12 +15,14 @@ export function SlideDeck({
   title,
   labels,
   preload,
+  themes,
   footer,
   children,
 }: {
   title: string;
   labels: string[];
   preload: string[][];
+  themes?: Theme[];
   footer?: ReactNode;
   children: ReactNode;
 }) {
@@ -54,13 +57,15 @@ export function SlideDeck({
   useEffect(() => {
     const want = `#${index + 1}`;
     if (window.location.hash !== want) history.replaceState(null, "", want);
-    (window as Window & { __deckProgress?: number }).__deckProgress = total > 1 ? index / (total - 1) : 0;
+    const w = window as Window & { __deckProgress?: number; __deckTheme?: Theme };
+    w.__deckProgress = total > 1 ? index / (total - 1) : 0;
+    w.__deckTheme = themes?.[index];
     // warm up the next slides' images
     for (const src of [...(preload[index + 1] ?? []), ...(preload[index + 2] ?? [])]) {
       const img = new Image();
       img.src = src;
     }
-  }, [index, total, preload]);
+  }, [index, total, preload, themes]);
 
   // Keyboard
   useEffect(() => {

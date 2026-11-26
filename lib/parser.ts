@@ -489,6 +489,7 @@ function toImage(slideId: string, el: SlidesPageElement, notes: Notes): DeckImag
     url: el.image!.contentUrl!,
     alt: one(notes, "alt") ?? clean(el.description ?? el.title ?? ""),
     ...(one(notes, "focus") ? { focus: one(notes, "focus") } : {}),
+    ...(/^(left|right|top)$/i.test(one(notes, "align") ?? "") ? { textSide: one(notes, "align")!.toLowerCase() as "left" | "right" | "top" } : {}),
   };
 }
 

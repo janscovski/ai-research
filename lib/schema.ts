@@ -26,6 +26,8 @@ export const ImageSchema = z.object({
   url: str,
   alt: z.string(),
   focus: z.string().optional(),
+  /** Where a title over this image is calmest (lower left, lower right, or the top band). Notes `align:` wins; otherwise measured at cache time. */
+  textSide: z.enum(["left", "right", "top"]).optional(),
   width: z.number().int().positive().optional(),
   height: z.number().int().positive().optional(),
   src: z.string().optional(),

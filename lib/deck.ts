@@ -88,6 +88,35 @@ async function readImageBytes(url: string): Promise<Buffer> {
   return Buffer.from(await res.arrayBuffer());
 }
 
+/**
+ * Pick where a plate title sits in shadow or empty space instead of over the
+ * subject: the top band (sky above heads), else the calmer lower side. Edge
+ * energy on a 96px greyscale thumbnail; lower left unless another is clearly calmer.
+ */
+export async function calmerSide(bytes: Buffer): Promise<"left" | "right" | "top"> {
+  const W = 96;
+  const { data, info } = await sharp(bytes).resize({ width: W }).greyscale().raw().toBuffer({ resolveWithObject: true });
+  const H = info.height;
+  const energy = (x0: number, x1: number, y0 = 0.4, y1 = 1) => {
+    let sum = 0;
+    let n = 0;
+    for (let y = Math.floor(H * y0); y < Math.floor(H * y1) - 1; y++) {
+      for (let x = x0; x < x1 - 1; x++) {
+        const i = y * W + x;
+        sum += Math.abs(data[i] - data[i + 1]) + Math.abs(data[i] - data[i + W]);
+        n++;
+      }
+    }
+    return sum / Math.max(1, n);
+  };
+  const left = energy(0, Math.floor(W * 0.55));
+  const right = energy(Math.floor(W * 0.45), W);
+  const top = energy(0, W, 0, 0.4);
+  // An empty sky above the subjects beats either lower corner by a wide margin.
+  if (top < Math.min(left, right) * 0.5) return "top";
+  return right < left * 0.7 ? "right" : "left";
+}
+
 async function cacheImage(img: DeckImage): Promise<DeckImage> {
   const bytes = await readImageBytes(img.url);
   const hash = createHash("sha1").update(bytes).digest("hex").slice(0, 16);
@@ -114,6 +143,7 @@ async function cacheImage(img: DeckImage): Promise<DeckImage> {
     url: "cached",
     alt: img.alt,
     ...(img.focus ? { focus: img.focus } : {}),
+    textSide: img.textSide ?? (await calmerSide(bytes).catch(() => "left" as const)),
     width,
     height,
     src: `/api/deck-image/${hash}-1920.webp`,
