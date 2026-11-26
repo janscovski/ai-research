@@ -16,6 +16,7 @@
 }
 
 html {
+  font-size: var(--root-size);
   background: var(--color-base);
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
@@ -39,17 +40,17 @@ body {
 }
 
 .kicker {
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-weight: 600;
   color: var(--color-accent);
 }
 .label {
-  font-size: 0.72rem;
-  letter-spacing: 0.16em;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-faint);
 }
 

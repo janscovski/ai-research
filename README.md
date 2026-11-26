@@ -12,7 +12,10 @@ Google Slides ──presentations.get──▶ lib/deck.ts (server only) ──�
 ```
 
 **Stack:** Next.js 16 (App Router) · TypeScript · Tailwind CSS 4 · Motion (Framer Motion) · zod · sharp.
-Why Motion over GSAP: it is declarative React, it gives us scroll-linked values (`useScroll`) and in-view reveals, and it respects `prefers-reduced-motion` globally through `MotionConfig`. The light traces and the hero are plain CSS, so they cost no JS.
+Why Motion over GSAP: it is declarative React, it handles enter/exit transitions between slides (`AnimatePresence`), and it respects `prefers-reduced-motion` globally through `MotionConfig`. The light traces and the hero are plain CSS, so they cost no JS.
+
+**Format:** a full-screen, slide-by-slide presentation, not a long scroll. Each deck section opens with its divider image as a cinematic plate, followed by content slides. A block that holds more than fits one screen (e.g. Investment: figures, savings, tool tables) is split across several slides.
+Navigate with the small ‹ › controls (bottom right), ← → / PageUp PageDown / Space, a horizontal swipe on touch screens, or the mouse wheel (once a slide's own content has scrolled to its edge). The slide number is in the URL (`/#7`) so a slide can be linked directly.
 
 ---
 
@@ -127,7 +130,7 @@ card: label | value | note
 
 ## 5. Swapping the background loop
 
-The default is a **WebGL shader** in `components/Background.tsx` (0 KB of assets). Every moving term is periodic in `2π·t / --bg-loop-seconds`, so the loop is **seamless by construction** and needs no crossfade. It renders at half resolution and 30 fps, pauses in hidden tabs, starts only after `load` + idle, and drifts slightly with scroll (the only parallax on the page). It is replaced by a static CSS poster for `prefers-reduced-motion`, Save-Data and no-WebGL.
+The default is a **WebGL shader** in `components/Background.tsx` (0 KB of assets). Every moving term is periodic in `2π·t / --bg-loop-seconds`, so the loop is **seamless by construction** and needs no crossfade. It renders at half resolution and 30 fps, pauses in hidden tabs, starts only after `load` + idle, and drifts slightly as the deck advances (the only parallax). It is replaced by a static CSS poster for `prefers-reduced-motion`, Save-Data and no-WebGL.
 
 To use a pre-rendered loop instead:
 1. Export a loop that already crossfades its last ~1 s into its first frame (After Effects / Resolve). Keep it muted, ≤ 2 MB, 1280×720 is enough because it sits behind content.
@@ -177,8 +180,8 @@ npm run deck:dump && npm test
 - [x] Live-edit loop (fixture): editing the closing line in the fixture, then `POST /api/revalidate`, then the new text is served. Restoring it brings the original back.
 - [x] `/api/revalidate` returns 401 without the secret and 200 with it. The image route rejects traversal.
 - [x] No Google image URL appears in the HTML. Images are served from the local cache.
-- [x] Playwright at 390 / 768 / 1440, normal and reduced-motion: no console errors, no horizontal overflow.
-- [x] Lighthouse (mobile, local `next start`): Performance 93–94, Accessibility 100, Best Practices 100, CLS 0.
+- [x] Playwright, every slide at 390, 768, 1366 and 1440, normal and reduced motion: no console errors. At 1366×768 and 1440×900 every slide fits one screen. At 390 the longer slides scroll inside the slide.
+- [x] Lighthouse (mobile, local `next start`): Performance 89, Accessibility 100, Best Practices 100, CLS 0.
 
 **Not verified:**
 - [ ] A real Google Slides API call (needs credentials). The service-account and API-key code paths are untested against Google.

@@ -13,7 +13,7 @@ import { useEffect, useRef, useState } from "react";
  *
  * Static poster (CSS gradient) is shown first, for reduced motion, without WebGL,
  * on Save-Data, and while the shader is deferred until the page is idle.
- * Parallax: the light horizon drifts slightly with scroll — background only.
+ * Parallax: the light horizon drifts slightly as the deck advances — background only.
  */
 
 const MODE = process.env.NEXT_PUBLIC_BACKGROUND === "video" ? "video" : "shader";
@@ -113,8 +113,10 @@ export function Background() {
         raf = requestAnimationFrame(frame);
         if (document.hidden || now - last < 1000 / 30) return; // 30 fps is plenty for a slow field
         last = now;
+        // Parallax target: the slide deck's progress (0..1), or page scroll as a fallback.
+        const deck = (window as Window & { __deckProgress?: number }).__deckProgress;
         const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-        scroll += (window.scrollY / max - scroll) * 0.08;
+        scroll += ((deck ?? window.scrollY / max) - scroll) * 0.05;
         const t = (now - t0) / 1000;
         gl.uniform1f(uPh, ((t % period) / period) * Math.PI * 2);
         gl.uniform1f(uS, scroll);

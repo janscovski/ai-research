@@ -11,7 +11,7 @@ export function StageBars({ stages }: { stages: { label: string; value: string; 
   const values = stages.map((s) => parseRupiah(s.value) ?? 0);
   const max = Math.max(...values, 1);
   return (
-    <ol className="grid gap-10 md:gap-12">
+    <ol className="grid gap-[clamp(1.25rem,4.5vh,3rem)]">
       {stages.map((s, i) => {
         const final = i === stages.length - 1;
         const ratio = values[i] / max;
@@ -19,10 +19,10 @@ export function StageBars({ stages }: { stages: { label: string; value: string; 
           <li key={s.label} className="grid gap-3">
             <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
               <p className="label">{s.label}</p>
-              {s.unit && <p className="text-sm text-faint">{s.unit}</p>}
+              {s.unit && <p className="text-base text-faint">{s.unit}</p>}
             </div>
             <p
-              className={`relative w-fit text-[clamp(2.5rem,7vw,5.5rem)] font-light leading-none tracking-[-0.03em] ${
+              className={`relative w-fit text-[clamp(2.4rem,min(6.5vw,9.5vh),6rem)] font-light leading-none tracking-[-0.03em] ${
                 final ? "text-accent" : "text-muted"
               }`}
             >

@@ -12,14 +12,18 @@
   --color-base: #09090a; /* page background */
   --color-surface: #111113; /* cards */
   --color-raised: #17171a; /* table header, hover */
-  --color-line: rgb(236 233 228 / 0.11); /* hairlines, card borders */
+  --color-line: rgb(236 233 228 / 0.14); /* hairlines, card borders */
   --color-line-strong: rgb(236 233 228 / 0.22);
   --color-text: #ece9e4; /* 16.9:1 on base */
-  --color-muted: rgb(236 233 228 / 0.66); /* ~8.5:1 on base */
-  --color-faint: rgb(236 233 228 / 0.52); /* ~5.6:1 on base, small labels only */
+  --color-muted: rgb(236 233 228 / 0.82); /* ~11:1 on base, secondary text */
+  --color-faint: rgb(236 233 228 / 0.68); /* ~7.5:1 on base, labels and meta */
   --color-accent: #4d8dff; /* light traces, final figures, 6.1:1 on base */
   --color-accent-glow: rgb(77 141 255 / 0.55);
   --color-accent-soft: rgb(77 141 255 / 0.14);
+
+  /* Type: one fluid scale. Root size follows the viewport so slides keep their
+     proportions from a phone to a 4K screen. Everything else is in rem. */
+  --root-size: clamp(16px, calc(0.45vw + 0.6vh + 6px), 24px);
 
   /* Shape */
   --radius-card: 6px;
