@@ -1,0 +1,212 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+@theme inline {
+  --color-base: var(--color-base);
+  --color-surface: var(--color-surface);
+  --color-raised: var(--color-raised);
+  --color-line: var(--color-line);
+  --color-line-strong: var(--color-line-strong);
+  --color-text: var(--color-text);
+  --color-muted: var(--color-muted);
+  --color-faint: var(--color-faint);
+  --color-accent: var(--color-accent);
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --ease-cinematic: var(--ease-cinematic);
+}
+
+html {
+  background: var(--color-base);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+body {
+  background: transparent;
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+}
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-text);
+}
+
+/* Money and counts never jitter */
+.num {
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: "tnum", "lnum";
+}
+
+.kicker {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+.label {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-faint);
+}
+
+/* ------------------------------------------------------------------------ */
+/* Tech-light card: one light pass on scroll-into-view, then a slow shimmer  */
+/* ------------------------------------------------------------------------ */
+.tech-card {
+  position: relative;
+  border-radius: var(--radius-card);
+  background: color-mix(in oklab, var(--color-surface) 82%, transparent);
+  border: 1px solid var(--color-line);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+.tech-card > .trace {
+  position: absolute;
+  inset: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  overflow: visible;
+  pointer-events: none;
+  filter: drop-shadow(0 0 3px var(--color-accent-glow)) drop-shadow(0 0 10px var(--color-accent-soft));
+}
+.tech-card > .trace rect {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 1.25;
+  stroke-linecap: round;
+  stroke-dasharray: 0.16 0.84;
+  stroke-dashoffset: 1;
+  opacity: 0;
+}
+.tech-card[data-lit="true"] > .trace rect {
+  animation:
+    trace-pass var(--dur-trace) var(--ease-linear-soft) var(--trace-delay, 0s) forwards,
+    trace-idle var(--dur-shimmer) linear calc(var(--dur-trace) + var(--trace-delay, 0s) + 1.5s) infinite;
+}
+@keyframes trace-pass {
+  0% { stroke-dashoffset: 1; opacity: 0; }
+  8% { opacity: 1; }
+  88% { opacity: 1; }
+  100% { stroke-dashoffset: 0; opacity: 0; }
+}
+@keyframes trace-idle {
+  0% { stroke-dashoffset: 1; opacity: 0; }
+  20% { opacity: 0.28; }
+  80% { opacity: 0.28; }
+  100% { stroke-dashoffset: 0; opacity: 0; }
+}
+
+/* Workflow light: a dot travels the pipeline once */
+.pipeline-track { position: relative; }
+.pipeline-track::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 64px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+  filter: drop-shadow(0 0 4px var(--color-accent-glow));
+  opacity: 0;
+}
+[data-lit="true"] .pipeline-track::after {
+  animation: travel-x 3.2s var(--ease-linear-soft) 0.4s forwards;
+}
+@keyframes travel-x {
+  0% { left: 0; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: calc(100% - 64px); opacity: 0; }
+}
+@media (max-width: 767px) {
+  .pipeline-track::after {
+    width: 1px;
+    height: 64px;
+    background: linear-gradient(180deg, transparent, var(--color-accent), transparent);
+  }
+  [data-lit="true"] .pipeline-track::after { animation-name: travel-y; }
+  @keyframes travel-y {
+    0% { top: 0; opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { top: calc(100% - 64px); opacity: 0; }
+  }
+}
+
+/* Closing line: one slow light sweep through the type */
+.sweep {
+  background: linear-gradient(100deg, var(--color-text) 40%, var(--color-accent) 50%, var(--color-text) 60%) 0 0 / 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-position: 100% 0;
+}
+.sweep[data-lit="true"] {
+  animation: sweep 3.6s var(--ease-linear-soft) 0.6s forwards;
+}
+@keyframes sweep {
+  to { background-position: 0% 0; }
+}
+
+/* Background poster (also the reduced-motion and no-WebGL state) */
+.bg-poster {
+  background:
+    radial-gradient(120% 60% at 50% 115%, var(--color-accent-soft), transparent 60%),
+    radial-gradient(80% 50% at 85% -10%, rgb(77 141 255 / 0.06), transparent 70%),
+    var(--color-base);
+}
+
+/* Scroll cue */
+.cue {
+  transform-origin: top;
+  animation: cue 2.8s var(--ease-cinematic) infinite;
+}
+@keyframes cue {
+  0% { transform: scaleY(0); opacity: 0; }
+  30% { opacity: 1; }
+  60% { transform: scaleY(1); opacity: 1; }
+  100% { transform: scaleY(1); opacity: 0; }
+}
+
+/* ------------------------------------------------------------------------ */
+/* Reduced motion: every animation has a static equivalent                    */
+/* ------------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .tech-card { border-color: var(--color-line-strong); }
+  .tech-card > .trace,
+  .pipeline-track::after { display: none; }
+  .sweep { animation: none !important; background: none; color: var(--color-text); }
+  .cue { animation: none; opacity: 0.6; transform: none; }
+}
+
+/* Hero: slow push-out of the cover image + title fade, CSS only */
+.hero-img {
+  animation: hero-push 9s var(--ease-cinematic) both;
+}
+.hero-in {
+  animation: hero-in 1.8s var(--ease-cinematic) both;
+}
+@keyframes hero-push {
+  from { transform: scale(1.08); }
+  to { transform: scale(1); }
+}
+/* The title is the LCP element: it moves but never starts invisible. */
+.hero-title {
+  animation: hero-rise 1.8s var(--ease-cinematic) both;
+}
+@keyframes hero-rise {
+  from { transform: translateY(18px); letter-spacing: -0.01em; }
+  to { transform: none; }
+}
+@keyframes hero-in {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-img, .hero-in, .hero-title { animation: none; }
+}

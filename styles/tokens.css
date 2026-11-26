@@ -1,0 +1,36 @@
+/*
+ * Design tokens — the single file to swap the look.
+ *
+ * ASSUMPTION (flagged in README): the deck has no brand palette for the web.
+ * Base is near-black, text is a barely-warm off-white, and the single accent is
+ * the electric blue sampled from the deck's cover and divider images.
+ * Every colour used by components, the background shader and the light traces
+ * comes from here.
+ */
+:root {
+  /* Colour */
+  --color-base: #09090a; /* page background */
+  --color-surface: #111113; /* cards */
+  --color-raised: #17171a; /* table header, hover */
+  --color-line: rgb(236 233 228 / 0.11); /* hairlines, card borders */
+  --color-line-strong: rgb(236 233 228 / 0.22);
+  --color-text: #ece9e4; /* 16.9:1 on base */
+  --color-muted: rgb(236 233 228 / 0.66); /* ~8.5:1 on base */
+  --color-faint: rgb(236 233 228 / 0.52); /* ~5.6:1 on base, small labels only */
+  --color-accent: #4d8dff; /* light traces, final figures, 6.1:1 on base */
+  --color-accent-glow: rgb(77 141 255 / 0.55);
+  --color-accent-soft: rgb(77 141 255 / 0.14);
+
+  /* Shape */
+  --radius-card: 6px;
+
+  /* Motion: slow and deliberate, no bounce */
+  --ease-cinematic: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-linear-soft: cubic-bezier(0.45, 0, 0.55, 1);
+  --dur-reveal: 1.4s;
+  --dur-trace: 2.6s;
+  --dur-shimmer: 11s;
+
+  /* Background loop (shader) */
+  --bg-loop-seconds: 32; /* period of the seamless loop */
+}
