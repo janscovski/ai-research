@@ -1,0 +1,42 @@
+{
+  "version": "sample-0001",
+  "updatedAt": "2026-11-27T07:45:00.000Z",
+  "title": "Marrakesh Creative Lab — Live Microsite",
+  "slides": [
+    {
+      "id": "s1", "index": 0, "section": "hero",
+      "title": "Creativity On-The-Street",
+      "body": ["Creative 3D, OOH, dan produksi film dari Jakarta."],
+      "image": { "src": "https://picsum.photos/id/1067/1920/1080", "alt": "Lampu kota Jakarta di malam hari" },
+      "fields": { "section": ["hero"], "cta": ["Lihat karya | #works"] }
+    },
+    {
+      "id": "s2", "index": 1, "section": "default",
+      "title": "The Art of Storytelling",
+      "body": ["Kami percaya karya yang bagus punya cerita sebelum punya dekorasi.", "Setiap KV, anamorphic, dan film kami mulai dari satu insight yang jujur."],
+      "image": null,
+      "fields": {}
+    },
+    {
+      "id": "s3", "index": 2, "section": "stats",
+      "title": "Dalam angka",
+      "body": [],
+      "image": null,
+      "fields": { "section": ["stats"], "stat": ["120+ | Proyek OOH", "35 | Konten anamorphic", "9 | Kota"] }
+    },
+    {
+      "id": "s4", "index": 3, "section": "default",
+      "title": "Anamorphic LED — Bundaran HI",
+      "body": ["Ilusi 3D 30 detik untuk peluncuran produk, dilihat ±1,2 juta orang per minggu (contoh data)."],
+      "image": { "src": "https://picsum.photos/id/1043/1600/1000", "alt": "Layar LED besar di persimpangan" },
+      "fields": { "section": ["default"], "tag": ["CGI", "Anamorphic"] }
+    },
+    {
+      "id": "s5", "index": 4, "section": "cta",
+      "title": "Start Local, Go Viral.",
+      "body": ["Punya brief? Ngobrol 30 menit dulu."],
+      "image": null,
+      "fields": { "section": ["cta"], "cta": ["Hubungi kami | mailto:hello@example.com"] }
+    }
+  ]
+}
