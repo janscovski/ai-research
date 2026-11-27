@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Microsite</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* Ganti token ini sesuai brand. Semua warna & font ada di sini. */
+  :root {
+    --bg: #0b0b0c; --fg: #ece9e4; --muted: #9a958e; --accent: #e8467c; --line: #ffffff1a;
+    --display: "Instrument Serif", Georgia, serif; --text: "Inter Tight", system-ui, sans-serif;
+    --gutter: clamp(16px, 5vw, 72px);
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--fg); font: 400 17px/1.6 var(--text); -webkit-font-smoothing: antialiased; }
+  img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  a { color: inherit; }
+  section { padding: clamp(64px, 12vh, 140px) var(--gutter); border-top: 1px solid var(--line); }
+  h1, h2 { font: 400 clamp(40px, 8vw, 112px)/0.95 var(--display); letter-spacing: -0.01em; }
+  h2 { font-size: clamp(32px, 5vw, 64px); margin-bottom: 24px; }
+  p { max-width: 60ch; color: var(--muted); }
+  p + p { margin-top: 12px; }
+
+  .hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; border: 0; overflow: hidden; }
+  .hero figure { position: absolute; inset: 0; z-index: -1; }
+  .hero figure::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, #0000 30%, var(--bg)); }
+  .hero p { color: var(--fg); margin-top: 20px; font-size: 19px; }
+
+  .default { display: grid; gap: 40px; grid-template-columns: 1fr; align-items: center; }
+  .default.has-image { grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+  .default figure { aspect-ratio: 4 / 3; overflow: hidden; }
+  .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+  .tags span { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; border: 1px solid var(--line); padding: 4px 10px; border-radius: 99px; color: var(--muted); }
+
+  .stats ul { list-style: none; padding: 0; display: grid; gap: 32px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+  .stats strong { display: block; font: 400 clamp(48px, 7vw, 96px)/1 var(--display); color: var(--accent); }
+
+  .cta { text-align: center; } .cta p { margin: 16px auto 32px; }
+  .btn { display: inline-block; padding: 14px 28px; border: 1px solid var(--fg); border-radius: 99px; text-decoration: none; transition: background .2s, color .2s; }
+  .btn:hover { background: var(--fg); color: var(--bg); }
+
+  .status { position: fixed; right: 16px; bottom: 16px; font-size: 12px; color: var(--muted); background: #000a; padding: 6px 10px; border-radius: 99px; }
+  .fade { animation: fade .6s ease both; } @keyframes fade { from { opacity: 0; transform: translateY(8px); } }
+  @media (prefers-reduced-motion: reduce) { .fade { animation: none; } }
+</style>
+</head>
+<body>
+<main id="app" aria-live="polite"></main>
+<div class="status" id="status">Memuat…</div>
+
+<script>
+  // 1) Ganti dengan URL Web app Apps Script (berakhiran /exec).
+  //    Untuk preview lokal tanpa Google: buka index.html?src=sample.json
+  const CONTENT_URL = new URLSearchParams(location.search).get("src") || "https://script.google.com/macros/s/XXXX/exec";
+  const POLL_MS = 30000; // 30 detik. Lebih cepat tidak berguna: deck dicek tiap 1–5 menit.
+  const STORE_KEY = "live-cms-snapshot";
+
+  let currentVersion = null;
+
+  // Helper bikin elemen. Semua teks lewat textContent, jadi isi deck tidak bisa menyuntik HTML.
+  function h(tag, attrs = {}, ...kids) {
+    const el = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) if (v != null) el.setAttribute(k, v);
+    for (const kid of kids.flat()) if (kid != null) el.append(kid instanceof Node ? kid : String(kid));
+    return el;
+  }
+  const split = (v) => String(v || "").split("|").map((s) => s.trim());
+  const safeHref = (url) => /^(https?:|mailto:|#|\/)/i.test(url) ? url : null;
+  const paras = (list) => (list || []).map((t) => h("p", {}, t));
+  const pic = (img, eager) => img && h("figure", {}, h("img", { src: img.src, alt: img.alt || "", loading: eager ? "eager" : "lazy" }));
+  function cta(s) {
+    const [label, url] = split((s.fields.cta || [])[0]);
+    const href = safeHref(url || "");
+    return label && href ? h("a", { class: "btn", href }, label) : null;
+  }
+
+  // 2) Renderer per section. Tambah section baru = tambah satu fungsi di sini.
+  const RENDER = {
+    hero: (s) => h("section", { class: "hero" }, pic(s.image, true), h("div", {}, h("h1", {}, s.title), paras(s.body), cta(s) && h("p", {}, cta(s)))),
+    stats: (s) => h("section", { class: "stats" }, h("h2", {}, s.title),
+      h("ul", {}, (s.fields.stat || []).map((v) => { const [n, l] = split(v); return h("li", {}, h("strong", {}, n), l); }))),
+    cta: (s) => h("section", { class: "cta" }, h("h2", {}, s.title), paras(s.body), cta(s)),
+    default: (s) => h("section", { class: "default" + (s.image ? " has-image" : "") },
+      h("div", {}, (s.fields.tag || []).length ? h("div", { class: "tags" }, s.fields.tag.map((t) => h("span", {}, t))) : null,
+        s.title && h("h2", {}, s.title), paras(s.body), cta(s)),
+      pic(s.image)),
+  };
+
+  function render(data) {
+    document.title = data.title || document.title;
+    const app = document.getElementById("app");
+    app.replaceChildren(...data.slides.map((s) => {
+      const fn = RENDER[s.section] || RENDER.default; // section tak dikenal → tampil sebagai default
+      const el = fn({ ...s, fields: s.fields || {} });
+      el.classList.add("fade");
+      return el;
+    }));
+  }
+
+  function setStatus(text) { document.getElementById("status").textContent = text; }
+  function time(iso) { return new Date(iso).toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" }); }
+
+  async function refresh() {
+    try {
+      const res = await fetch(CONTENT_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const data = await res.json();
+      if (data.version !== currentVersion) { // re-render hanya kalau konten benar-benar berubah
+        currentVersion = data.version;
+        render(data);
+        try { localStorage.setItem(STORE_KEY, JSON.stringify(data)); } catch {}
+      }
+      setStatus("Update " + time(data.updatedAt));
+    } catch (err) {
+      console.warn("[live-cms]", err);
+      if (!currentVersion) { // fetch pertama gagal: pakai snapshot terakhir di browser
+        try { const snap = JSON.parse(localStorage.getItem(STORE_KEY)); if (snap) { currentVersion = snap.version; render(snap); } } catch {}
+      }
+      setStatus(currentVersion ? "Offline, menampilkan versi terakhir" : "Konten belum bisa dimuat");
+    }
+  }
+
+  refresh();
+  setInterval(() => { if (!document.hidden) refresh(); }, POLL_MS);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
+</script>
+</body>
+</html>
