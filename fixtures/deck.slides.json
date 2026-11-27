@@ -1,0 +1,4276 @@
+{
+ "_fixture_note": "Synthetic presentations.get response. Visible text and images are copied from the live deck (Drive export 2026-11-26; investment slide geometry and text re-synced from the live deck 2026-11-27). objectIds, geometry, speaker notes, the hidden slide and the ROADMAP slide are test scaffolding. Replace with real output via `npm run deck:dump`.",
+ "presentationId": "1vgXhQgd6zspwH_iBpmeq_x4hsTTxLH9eXQR4KM4698A",
+ "title": "K-GROUP AI OPTIMIZATION 2027 — Live CMS",
+ "revisionId": "fixture-2026-11-26",
+ "pageSize": {
+  "width": {
+   "magnitude": 9144000,
+   "unit": "EMU"
+  },
+  "height": {
+   "magnitude": 5143500,
+   "unit": "EMU"
+  }
+ },
+ "slides": [
+  {
+   "objectId": "s01",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s01_e0",
+     "size": {
+      "width": {
+       "magnitude": 9144000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 5143500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 0,
+      "translateY": 0,
+      "unit": "EMU"
+     },
+     "image": {
+      "contentUrl": "fixture:cover.jpg",
+      "imageProperties": {}
+     }
+    },
+    {
+     "objectId": "s01_e1",
+     "size": {
+      "width": {
+       "magnitude": 7315200,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 925830,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 914400,
+      "translateY": 617220,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 25,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 25,
+         "textRun": {
+          "content": "K-GROUP AI OPTIMIZATION \n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 25,
+         "endIndex": 79,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 25,
+         "endIndex": 79,
+         "textRun": {
+          "content": "Business Development × Marrakesh Creative Powerhouse \n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 79,
+         "endIndex": 80,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 79,
+         "endIndex": 80,
+         "textRun": {
+          "content": "\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 80,
+         "endIndex": 82,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 80,
+         "endIndex": 82,
+         "textRun": {
+          "content": " \n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s01_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s01_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s01_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s02",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s02_e0",
+     "size": {
+      "width": {
+       "magnitude": 9144000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 5143500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 0,
+      "translateY": 0,
+      "unit": "EMU"
+     },
+     "image": {
+      "contentUrl": "fixture:why-ai.jpg",
+      "imageProperties": {}
+     }
+    },
+    {
+     "objectId": "s02_e1",
+     "size": {
+      "width": {
+       "magnitude": 5486400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 771525,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 1828800,
+      "translateY": 1954530,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 31,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 31,
+         "textRun": {
+          "content": "Why Do We            Need AI? \n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s02_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s02_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s02_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s03",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s03_e0",
+     "size": {
+      "width": {
+       "magnitude": 3657600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 257175,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 308610,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 15,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 15,
+         "textRun": {
+          "content": "01 · OBJECTIVE\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s03_e1",
+     "size": {
+      "width": {
+       "magnitude": 7315200,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 514350,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 720090,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 19,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 19,
+         "textRun": {
+          "content": "Why Do We Need AI?\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s03_e2",
+     "size": {
+      "width": {
+       "magnitude": 7772400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 1285875,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 1954530,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 45,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 45,
+         "textRun": {
+          "content": "Speed · Repetitive Work · Skill Augmentation\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 45,
+         "endIndex": 103,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 45,
+         "endIndex": 103,
+         "textRun": {
+          "content": "Scalability · Quality & Consistency · Knowledge Retention\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 103,
+         "endIndex": 104,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 103,
+         "endIndex": 104,
+         "textRun": {
+          "content": "\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 104,
+         "endIndex": 134,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 104,
+         "endIndex": 134,
+         "textRun": {
+          "content": "BD: Intelligence to Strategy \n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 134,
+         "endIndex": 164,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 134,
+         "endIndex": 164,
+         "textRun": {
+          "content": "Marrakesh: Idea to Production\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s03_e3",
+     "size": {
+      "width": {
+       "magnitude": 5486400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 205740,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 4783455,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "textRun": {
+          "content": "K-GROUP  /  MARRAKESH AI RESEARCH LAB     •     02\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s03_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s03_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s03_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s04",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s04_e0",
+     "size": {
+      "width": {
+       "magnitude": 9144000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 5143500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 0,
+      "translateY": 0,
+      "unit": "EMU"
+     },
+     "image": {
+      "contentUrl": "fixture:ai-optimization.jpg",
+      "imageProperties": {}
+     }
+    },
+    {
+     "objectId": "s04_e1",
+     "size": {
+      "width": {
+       "magnitude": 3200400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 771525,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 5669280,
+      "translateY": 2828925,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 16,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 16,
+         "textRun": {
+          "content": "AI Optimization\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s04_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s04_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s04_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s05",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s05_kicker",
+     "size": {
+      "width": {
+       "magnitude": 8636000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 304800,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 254000,
+      "translateY": 114300,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 25,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 25,
+         "textRun": {
+          "content": "02 · INVESTMENT PROPOSAL\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_title",
+     "size": {
+      "width": {
+       "magnitude": 8636000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 533400,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 254000,
+      "translateY": 406400,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 16,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 16,
+         "textRun": {
+          "content": "AI Optimization\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st0_l",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 279400,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 254000,
+      "translateY": 1003300,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 19,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 19,
+         "textRun": {
+          "content": "Initial Investment\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st0_v",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 444500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 254000,
+      "translateY": 1270000,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 12,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 12,
+         "textRun": {
+          "content": "Rp147,86 jt\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st0_u",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 254000,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 254000,
+      "translateY": 1689100,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 9,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 9,
+         "textRun": {
+          "content": "Per year\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st1_l",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 279400,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 3098800,
+      "translateY": 1003300,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 18,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 18,
+         "textRun": {
+          "content": "Previous Proposal\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st1_v",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 444500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 3098800,
+      "translateY": 1270000,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 11,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 11,
+         "textRun": {
+          "content": "Rp93,52 jt\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st1_u",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 254000,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 3098800,
+      "translateY": 1689100,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 9,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 9,
+         "textRun": {
+          "content": "Per year\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st2_l",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 279400,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 5943600,
+      "translateY": 1003300,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 16,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 16,
+         "textRun": {
+          "content": "Final Proposal:\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st2_v",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 444500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 5943600,
+      "translateY": 1270000,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 11,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 11,
+         "textRun": {
+          "content": "Rp39,78 jt\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st2_u",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 254000,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 5943600,
+      "translateY": 1689100,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 9,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 9,
+         "textRun": {
+          "content": "Per year\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_alloc",
+     "size": {
+      "width": {
+       "magnitude": 4064000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 304800,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 330200,
+      "translateY": 2019300,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 33,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 33,
+         "textRun": {
+          "content": "Final tool allocation · per year\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_teams",
+     "size": {
+      "width": {
+       "magnitude": 4089400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 1612900,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 330200,
+      "translateY": 2336800,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 25,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 25,
+         "textRun": {
+          "content": "BD · Total: Rp19.049.190\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 25,
+         "endIndex": 53,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 25,
+         "endIndex": 53,
+         "textRun": {
+          "content": "ChatGPT Business 4.488.840 \n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 53,
+         "endIndex": 77,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 53,
+         "endIndex": 77,
+         "textRun": {
+          "content": "Claude Pro ×2 8.125.200\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 77,
+         "endIndex": 122,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 77,
+         "endIndex": 122,
+         "textRun": {
+          "content": "Google AI Pro 3.708.000 (NotebookLM bundled)\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 122,
+         "endIndex": 151,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 122,
+         "endIndex": 151,
+         "textRun": {
+          "content": "GWI Plus (1 Month) 2.727.150\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 151,
+         "endIndex": 152,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 151,
+         "endIndex": 152,
+         "textRun": {
+          "content": "\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 152,
+         "endIndex": 184,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 152,
+         "endIndex": 184,
+         "textRun": {
+          "content": "Marrakesh · Total: Rp20.739.240\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 184,
+         "endIndex": 211,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 184,
+         "endIndex": 211,
+         "textRun": {
+          "content": "ChatGPT Business 4.488.840\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 211,
+         "endIndex": 232,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 211,
+         "endIndex": 232,
+         "textRun": {
+          "content": "Claude Pro 4.062.600\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 232,
+         "endIndex": 263,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 232,
+         "endIndex": 263,
+         "textRun": {
+          "content": "Higgsfield Ultra 3K 10.969.020\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 263,
+         "endIndex": 284,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 263,
+         "endIndex": 284,
+         "textRun": {
+          "content": "ElevenLabs 1.218.780\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_rule",
+     "size": {
+      "width": {
+       "magnitude": 8534400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 12700,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 330200,
+      "translateY": 4000500,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 1,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 1,
+         "textRun": {
+          "content": "\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_red_l",
+     "size": {
+      "width": {
+       "magnitude": 3937000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 279400,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 254000,
+      "translateY": 4064000,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 21,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 21,
+         "textRun": {
+          "content": "Total cost reduction\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_sav_l",
+     "size": {
+      "width": {
+       "magnitude": 4064000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 279400,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 4800600,
+      "translateY": 4064000,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 24,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 24,
+         "textRun": {
+          "content": "Annual potential saving\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_red_v",
+     "size": {
+      "width": {
+       "magnitude": 3937000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 482600,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 254000,
+      "translateY": 4305300,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 6,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 6,
+         "textRun": {
+          "content": "73,1%\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_sav_v",
+     "size": {
+      "width": {
+       "magnitude": 4064000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 482600,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 4800600,
+      "translateY": 4305300,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 12,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 12,
+         "textRun": {
+          "content": "Rp108,07 jt\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s05_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s05_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s05_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s06",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s06_e0",
+     "size": {
+      "width": {
+       "magnitude": 9144000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 5143500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 0,
+      "translateY": 0,
+      "unit": "EMU"
+     },
+     "image": {
+      "contentUrl": "fixture:use-case.jpg",
+      "imageProperties": {}
+     }
+    },
+    {
+     "objectId": "s06_e1",
+     "size": {
+      "width": {
+       "magnitude": 4572000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 771525,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 2286000,
+      "translateY": 3188970,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 14,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 14,
+         "textRun": {
+          "content": "Use \t\t\t\tCase \n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s06_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s06_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s06_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s07",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s07_e0",
+     "size": {
+      "width": {
+       "magnitude": 3657600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 257175,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 308610,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 15,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 15,
+         "textRun": {
+          "content": "03 · USE CASES\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s07_e1",
+     "size": {
+      "width": {
+       "magnitude": 4572000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 411480,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 720090,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 11,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 11,
+         "textRun": {
+          "content": "Marrakesh:\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s07_e2",
+     "size": {
+      "width": {
+       "magnitude": 7315200,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 1028700,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 1543050,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 44,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 44,
+         "textRun": {
+          "content": "312 Target Videos Per Year for Nord & Smith\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 44,
+         "endIndex": 82,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 44,
+         "endIndex": 82,
+         "textRun": {
+          "content": "240 AI Explainers — 20/month · 30–60s\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 82,
+         "endIndex": 122,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 82,
+         "endIndex": 122,
+         "textRun": {
+          "content": "12 AI Cinematic TVCs — 1/month · 30–60s\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 122,
+         "endIndex": 159,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 122,
+         "endIndex": 159,
+         "textRun": {
+          "content": "60 AI Short Drama — 5/month · 15–30s\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 159,
+         "endIndex": 160,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 159,
+         "endIndex": 160,
+         "textRun": {
+          "content": "\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s07_e3",
+     "size": {
+      "width": {
+       "magnitude": 5486400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 205740,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 4783455,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "textRun": {
+          "content": "K-GROUP  /  MARRAKESH AI RESEARCH LAB     •     07\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s07_e4",
+     "size": {
+      "width": {
+       "magnitude": 8229600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 1543050,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 2828925,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 26,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 26,
+         "textRun": {
+          "content": "Project Supporting System\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 26,
+         "endIndex": 106,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 26,
+         "endIndex": 106,
+         "textRun": {
+          "content": "3D Studio: referensi konsep dan tekstur · Post House: eksplorasi motion dan VFX\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 106,
+         "endIndex": 170,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 106,
+         "endIndex": 170,
+         "textRun": {
+          "content": "Production House: ide treatment, storyboard, dan previsualisasi\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 170,
+         "endIndex": 253,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 170,
+         "endIndex": 253,
+         "textRun": {
+          "content": "Design Studio: riset visual, moodboard, dan generasi image untuk eksplorasi desain\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 253,
+         "endIndex": 313,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 253,
+         "endIndex": 313,
+         "textRun": {
+          "content": "Operations & Commercial: riset, draft awal, dan dokumentasi\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 313,
+         "endIndex": 314,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 313,
+         "endIndex": 314,
+         "textRun": {
+          "content": "\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s07_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s07_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s07_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s08",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s08_e0",
+     "size": {
+      "width": {
+       "magnitude": 3657600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 257175,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 308610,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 15,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 15,
+         "textRun": {
+          "content": "03 · USE CASES\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s08_e1",
+     "size": {
+      "width": {
+       "magnitude": 7315200,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 411480,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 720090,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 38,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 38,
+         "textRun": {
+          "content": "Business Development: AI Intelligence\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s08_e2",
+     "size": {
+      "width": {
+       "magnitude": 8229600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 1028700,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 1748790,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 59,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 59,
+         "textRun": {
+          "content": "Market & competitor research · Audience & consumer insight\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 59,
+         "endIndex": 119,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 59,
+         "endIndex": 119,
+         "textRun": {
+          "content": "Business & campaign strategy · Pitch & proposal development\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 119,
+         "endIndex": 190,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 119,
+         "endIndex": 190,
+         "textRun": {
+          "content": "Knowledge intelligence: reusable research, case studies and frameworks\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s08_e3",
+     "size": {
+      "width": {
+       "magnitude": 5486400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 205740,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 4783455,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "textRun": {
+          "content": "K-GROUP  /  MARRAKESH AI RESEARCH LAB     •     09\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s08_scratch",
+     "size": {
+      "width": {
+       "magnitude": 3289300,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 825500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 2717800,
+      "translateY": 5829300,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 61,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 61,
+         "textRun": {
+          "content": "Expected impact after ai ke BD—---------------------------\\>\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s08_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s08_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s08_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s09",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s09_e0",
+     "size": {
+      "width": {
+       "magnitude": 3657600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 257175,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 308610,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 15,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 15,
+         "textRun": {
+          "content": "03 · USE CASES\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s09_e1",
+     "size": {
+      "width": {
+       "magnitude": 7315200,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 411480,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 720090,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 52,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 52,
+         "textRun": {
+          "content": "HIDDEN SLIDE — test fixture only, must never render\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s09_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s09_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s09_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    },
+    "isSkipped": true
+   }
+  },
+  {
+   "objectId": "s10",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s10_e0",
+     "size": {
+      "width": {
+       "magnitude": 9144000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 5143500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 0,
+      "translateY": 0,
+      "unit": "EMU"
+     },
+     "image": {
+      "contentUrl": "fixture:workflow.jpg",
+      "imageProperties": {}
+     }
+    },
+    {
+     "objectId": "s10_e1",
+     "size": {
+      "width": {
+       "magnitude": 5486400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 771525,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 1828800,
+      "translateY": 411480,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 29,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 29,
+         "textRun": {
+          "content": "The Value Is in the Workflow\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 29,
+         "endIndex": 43,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 29,
+         "endIndex": 43,
+         "textRun": {
+          "content": "Not the Tools\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s10_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s10_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s10_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s11",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s11_e0",
+     "size": {
+      "width": {
+       "magnitude": 3657600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 257175,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 308610,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 16,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 16,
+         "textRun": {
+          "content": "04 · EFFICIENCY\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s11_e1",
+     "size": {
+      "width": {
+       "magnitude": 7772400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 411480,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 720090,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 44,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 44,
+         "textRun": {
+          "content": "The Value Is in the Workflow, Not the Tools\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s11_e2",
+     "size": {
+      "width": {
+       "magnitude": 8229600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 1543050,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 1645920,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 5,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 5,
+         "textRun": {
+          "content": "BD: \n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 5,
+         "endIndex": 73,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 5,
+         "endIndex": 73,
+         "textRun": {
+          "content": "Brief → Research → Insight → Strategy → Human Validation → Proposal\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 73,
+         "endIndex": 74,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 73,
+         "endIndex": 74,
+         "textRun": {
+          "content": "\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 74,
+         "endIndex": 86,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 74,
+         "endIndex": 86,
+         "textRun": {
+          "content": "Marrakesh: \n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 86,
+         "endIndex": 154,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 86,
+         "endIndex": 154,
+         "textRun": {
+          "content": "Brief → Concept → Assets → Production → Audio → Human QC → Delivery\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s11_e3",
+     "size": {
+      "width": {
+       "magnitude": 5486400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 205740,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 4783455,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "textRun": {
+          "content": "K-GROUP  /  MARRAKESH AI RESEARCH LAB     •     10\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s11_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s11_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s11_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s12",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s12_e0",
+     "size": {
+      "width": {
+       "magnitude": 9144000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 5143500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 0,
+      "translateY": 0,
+      "unit": "EMU"
+     },
+     "image": {
+      "contentUrl": "fixture:efficiency.jpg",
+      "imageProperties": {}
+     }
+    },
+    {
+     "objectId": "s12_e1",
+     "size": {
+      "width": {
+       "magnitude": 5486400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 771525,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 1828800,
+      "translateY": 2160270,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 11,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 11,
+         "textRun": {
+          "content": "EFFICIENCY\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s12_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s12_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s12_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s13",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s13_e0",
+     "size": {
+      "width": {
+       "magnitude": 3657600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 257175,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 308610,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 16,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 16,
+         "textRun": {
+          "content": "04 · EFFICIENCY\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s13_e1",
+     "size": {
+      "width": {
+       "magnitude": 7315200,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 411480,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 720090,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 25,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 25,
+         "textRun": {
+          "content": "How We Optimize AI Usage\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s13_e2",
+     "size": {
+      "width": {
+       "magnitude": 8229600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 2057400,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 1645920,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 57,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 57,
+         "textRun": {
+          "content": "Prompt efficiency · Specialized skills · Model selection\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 57,
+         "endIndex": 113,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 57,
+         "endIndex": 113,
+         "textRun": {
+          "content": "Workflow standardization · Asset reusability · Human QC\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 113,
+         "endIndex": 114,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 113,
+         "endIndex": 114,
+         "textRun": {
+          "content": "\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 114,
+         "endIndex": 115,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 114,
+         "endIndex": 115,
+         "textRun": {
+          "content": "\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 115,
+         "endIndex": 135,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 115,
+         "endIndex": 135,
+         "textRun": {
+          "content": "Token Usage Format:\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 135,
+         "endIndex": 156,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 1
+          }
+         }
+        },
+        {
+         "startIndex": 135,
+         "endIndex": 156,
+         "textRun": {
+          "content": "LOW: repetitive task\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 156,
+         "endIndex": 185,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 1
+          }
+         }
+        },
+        {
+         "startIndex": 156,
+         "endIndex": 185,
+         "textRun": {
+          "content": "BALANCED: daily productivity\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 185,
+         "endIndex": 214,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 1
+          }
+         }
+        },
+        {
+         "startIndex": 185,
+         "endIndex": 214,
+         "textRun": {
+          "content": "POWERFUL: complex high-value\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s13_e3",
+     "size": {
+      "width": {
+       "magnitude": 5486400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 205740,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 4783455,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "textRun": {
+          "content": "K-GROUP  /  MARRAKESH AI RESEARCH LAB     •     11\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s13_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s13_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s13_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s14",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s14_e0",
+     "size": {
+      "width": {
+       "magnitude": 3657600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 257175,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 308610,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 16,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 16,
+         "textRun": {
+          "content": "04 · EFFICIENCY\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s14_e1",
+     "size": {
+      "width": {
+       "magnitude": 7315200,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 411480,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 720090,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 26,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 26,
+         "textRun": {
+          "content": "Centralized AI Monitoring\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s14_e2",
+     "size": {
+      "width": {
+       "magnitude": 7772400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 514350,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 1337310,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 46,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 46,
+         "textRun": {
+          "content": "AI Dashboard usage report — ai.marrakesh.asia\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 46,
+         "endIndex": 137,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 46,
+         "endIndex": 137,
+         "textRun": {
+          "content": "Usage analytics foundation in development; cost and productivity integration still needed.\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s14_e3",
+     "size": {
+      "width": {
+       "magnitude": 4023360,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 2468880,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 2468880,
+      "unit": "EMU"
+     },
+     "image": {
+      "contentUrl": "fixture:dashboard.jpg",
+      "imageProperties": {}
+     }
+    },
+    {
+     "objectId": "s14_e4",
+     "size": {
+      "width": {
+       "magnitude": 5486400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 205740,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 4783455,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "textRun": {
+          "content": "K-GROUP  /  MARRAKESH AI RESEARCH LAB     •     12\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s14_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s14_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s14_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s15",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s15_e0",
+     "size": {
+      "width": {
+       "magnitude": 9144000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 5143500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 0,
+      "translateY": 0,
+      "unit": "EMU"
+     },
+     "image": {
+      "contentUrl": "fixture:company-assets.jpg",
+      "imageProperties": {}
+     }
+    },
+    {
+     "objectId": "s15_e1",
+     "size": {
+      "width": {
+       "magnitude": 8412480,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 514350,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 365760,
+      "translateY": 3086100,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 41,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 41,
+         "textRun": {
+          "content": "Turning AI Knowledge Into Company Assets\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s15_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s15_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s15_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s16",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s16_e0",
+     "size": {
+      "width": {
+       "magnitude": 3657600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 257175,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 308610,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 17,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 17,
+         "textRun": {
+          "content": "05 · ACTION PLAN\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s16_e1",
+     "size": {
+      "width": {
+       "magnitude": 8229600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 411480,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 720090,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 41,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 41,
+         "textRun": {
+          "content": "Turning AI Knowledge Into Company Assets\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s16_e2",
+     "size": {
+      "width": {
+       "magnitude": 8229600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 2571750,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 1645920,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 46,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 46,
+         "textRun": {
+          "content": "K-Group Library Lab (seperti Google Research)\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 46,
+         "endIndex": 142,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 46,
+         "endIndex": 142,
+         "textRun": {
+          "content": "Prompt library: research, analysis, strategy, pitching, concept, script, storyboard, motion, QC\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 142,
+         "endIndex": 226,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 142,
+         "endIndex": 226,
+         "textRun": {
+          "content": "Company knowledge + methodology + workflow + quality standards → Reusable AI Skills\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 226,
+         "endIndex": 328,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 226,
+         "endIndex": 328,
+         "textRun": {
+          "content": "Training: initial onboarding and monthly research, creative, video, automation, improvement sessions.\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s16_e3",
+     "size": {
+      "width": {
+       "magnitude": 5486400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 205740,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 4783455,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "textRun": {
+          "content": "K-GROUP  /  MARRAKESH AI RESEARCH LAB     •     13\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s16_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s16_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s16_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": []
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s17",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s17_e0",
+     "size": {
+      "width": {
+       "magnitude": 3657600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 257175,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 308610,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 13,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 13,
+         "textRun": {
+          "content": "07 · ROADMAP\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s17_e1",
+     "size": {
+      "width": {
+       "magnitude": 7315200,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 411480,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 720090,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 53,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 53,
+         "textRun": {
+          "content": "UNKNOWN SECTION — test fixture only, must be ignored\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s17_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s17_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s17_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": [
+          {
+           "startIndex": 0,
+           "endIndex": 17,
+           "paragraphMarker": {
+            "style": {}
+           }
+          },
+          {
+           "startIndex": 0,
+           "endIndex": 17,
+           "textRun": {
+            "content": "section: roadmap\n",
+            "style": {}
+           }
+          }
+         ]
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "objectId": "s18",
+   "pageType": "SLIDE",
+   "pageElements": [
+    {
+     "objectId": "s18_e0",
+     "size": {
+      "width": {
+       "magnitude": 3657600,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 257175,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 308610,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 13,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 13,
+         "textRun": {
+          "content": "06 · VERDICT\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s18_e1",
+     "size": {
+      "width": {
+       "magnitude": 7315200,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 411480,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 720090,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 26,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 26,
+         "textRun": {
+          "content": "Rp37,06 jt Annual Budget \n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s18_e2",
+     "size": {
+      "width": {
+       "magnitude": 5486400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 205740,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 457200,
+      "translateY": 4783455,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 51,
+         "textRun": {
+          "content": "K-GROUP  /  MARRAKESH AI RESEARCH LAB     •     18\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s18_e3",
+     "size": {
+      "width": {
+       "magnitude": 7772400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 1285875,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 640080,
+      "translateY": 1645920,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 44,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 44,
+         "textRun": {
+          "content": "312 Target Videos Per Year for Nord & Smith\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 44,
+         "endIndex": 67,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 44,
+         "endIndex": 67,
+         "textRun": {
+          "content": "Project Support System\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 67,
+         "endIndex": 123,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 67,
+         "endIndex": 123,
+         "textRun": {
+          "content": "Market competitor research, Audience & consumer insight\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 123,
+         "endIndex": 153,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 123,
+         "endIndex": 153,
+         "textRun": {
+          "content": "Business & campaign strategy \n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s18_e4",
+     "size": {
+      "width": {
+       "magnitude": 7315200,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 514350,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 640080,
+      "translateY": 3703320,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 36,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 36,
+         "textRun": {
+          "content": "Less Spending. Greater Capability. \n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "slideProperties": {
+    "layoutObjectId": "L",
+    "masterObjectId": "M",
+    "notesPage": {
+     "objectId": "s18_n",
+     "pageType": "NOTES",
+     "notesProperties": {
+      "speakerNotesObjectId": "s18_notes"
+     },
+     "pageElements": [
+      {
+       "objectId": "s18_notes",
+       "shape": {
+        "shapeType": "TEXT_BOX",
+        "text": {
+         "textElements": [
+          {
+           "startIndex": 0,
+           "endIndex": 17,
+           "paragraphMarker": {
+            "style": {}
+           }
+          },
+          {
+           "startIndex": 0,
+           "endIndex": 17,
+           "textRun": {
+            "content": "section: verdict\n",
+            "style": {}
+           }
+          }
+         ]
+        }
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

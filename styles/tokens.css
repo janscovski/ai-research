@@ -1,0 +1,58 @@
+/*
+ * Design tokens — the single file to swap the look.
+ *
+ * ASSUMPTION (flagged in README): the deck has no brand palette for the web.
+ * Base is near-black, text is a barely-warm off-white, and the single accent is
+ * the electric blue sampled from the deck's cover and divider images.
+ * Every colour used by components, the background shader and the light traces
+ * comes from here.
+ */
+:root {
+  /* Colour */
+  --color-base: #050814; /* deep navy, never flat black */
+  --color-base-2: #0a1230; /* top of the background gradient */
+  --color-surface: #0c1226; /* cards */
+  --color-raised: #121a34; /* table header, hover */
+  --color-line: rgb(255 255 255 / 0.14); /* hairlines, card borders */
+  --color-line-strong: rgb(255 255 255 / 0.24);
+  --color-text: #ffffff; /* all primary text is white */
+  --color-muted: rgb(255 255 255 / 0.86); /* secondary text */
+  --color-faint: rgb(255 255 255 / 0.7); /* labels and meta, ~9:1 on base */
+  --color-accent: #4d8dff; /* light traces, final figures */
+  --color-accent-2: #3ad7ff; /* cyan for the background light */
+  --color-accent-glow: rgb(77 141 255 / 0.55);
+  --color-accent-soft: rgb(77 141 255 / 0.14);
+  --color-strike: #ff3b4e; /* superseded figures */
+  --color-strike-glow: rgb(255 59 78 / 0.55);
+
+  /* Background moods per slide (shader): primary light, secondary light */
+  --bg-blue-1: #4d8dff;
+  --bg-blue-2: #3ad7ff;
+  --bg-purple-1: #8f5bff;
+  --bg-purple-2: #ff5ad8;
+  --bg-green-1: #1fcf95;
+  --bg-green-2: #5ff0d0;
+
+  /* Team identity (cards): BD blue, Marrakesh green */
+  --color-team-bd: #4d8dff;
+  --color-team-bd-2: #2a4fd6;
+  --color-team-mk: #2fe39a;
+  --color-team-mk-2: #0d9f6e;
+
+  /* Type: one fluid scale. Root size follows the viewport so slides keep their
+     proportions from a phone to a 4K screen. Everything else is in rem. */
+  --root-size: clamp(16px, calc(0.45vw + 0.6vh + 6px), 24px);
+
+  /* Shape */
+  --radius-card: 6px;
+
+  /* Motion: slow and deliberate, no bounce */
+  --ease-cinematic: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-linear-soft: cubic-bezier(0.45, 0, 0.55, 1);
+  --dur-reveal: 1.4s;
+  --dur-trace: 2.6s;
+  --dur-shimmer: 11s;
+
+  /* Background loop (shader) */
+  --bg-loop-seconds: 32; /* period of the seamless loop */
+}
