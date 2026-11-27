@@ -115,15 +115,44 @@ interface SlideContent {
   images: { el: SlidesPageElement; areaRatio: number }[];
 }
 
-/** Lines in reading order: top-to-bottom, then left-to-right (row tolerance 2% of height). */
+/**
+ * Lines in reading order.
+ *
+ * Elements are first grouped into "stacks": boxes that sit directly under each
+ * other (vertical gap <= 2% of page height) and share most of their width, e.g.
+ * a label, its value and its unit placed as three separate text boxes. Stacks
+ * are then read top-to-bottom, left-to-right (row tolerance 2% of height), and
+ * each stack top-to-bottom. This keeps "Total cost reduction / 73,1%" together
+ * even when the deck lays labels out in one row and values in the next.
+ *
+ * Elements entirely outside the page (scratch notes parked off-canvas) are ignored.
+ */
 function readSlide(page: SlidesPage, pageW: number, pageH: number): SlideContent {
-  const els = flatten(page.pageElements);
+  const onPage = (b: ReturnType<typeof box>) =>
+    !pageW || !pageH || (b.x < pageW && b.y < pageH && b.x + b.w > 0 && b.y + b.h > 0);
+  const els = flatten(page.pageElements).filter((e) => onPage(box(e)));
   const tol = pageH * 0.02;
-  const sorted = [...els].sort((a, b) => {
-    const A = box(a);
-    const B = box(b);
-    return Math.abs(A.y - B.y) > tol ? A.y - B.y : A.x - B.x;
-  });
+  const byTop = [...els].sort((a, b) => box(a).y - box(b).y || box(a).x - box(b).x);
+  const stacks: { els: SlidesPageElement[]; x: number; y: number; w: number; bottom: number }[] = [];
+  for (const el of byTop) {
+    const b = box(el);
+    const stack =
+      b.w > 0 && b.h > 0
+        ? stacks.find((s) => {
+            const overlap = Math.min(s.x + s.w, b.x + b.w) - Math.max(s.x, b.x);
+            const gap = b.y - s.bottom;
+            return gap <= tol && gap >= -tol && overlap > 0.6 * Math.min(s.w, b.w);
+          })
+        : undefined;
+    if (stack) {
+      stack.els.push(el);
+      stack.bottom = Math.max(stack.bottom, b.y + b.h);
+    } else {
+      stacks.push({ els: [el], x: b.x, y: b.y, w: b.w, bottom: b.y + b.h });
+    }
+  }
+  stacks.sort((A, B) => (Math.abs(A.y - B.y) > tol ? A.y - B.y : A.x - B.x));
+  const sorted = stacks.flatMap((s) => s.els);
   const lines: string[] = [];
   const images: SlideContent["images"] = [];
   for (const el of sorted) {

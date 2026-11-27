@@ -1,5 +1,5 @@
 {
- "_fixture_note": "Synthetic presentations.get response. Visible text and images are copied from the live deck (Drive export, 2026-11-26). objectIds, geometry, speaker notes, the hidden slide and the ROADMAP slide are test scaffolding. Replace with real output via `npm run deck:dump`.",
+ "_fixture_note": "Synthetic presentations.get response. Visible text and images are copied from the live deck (Drive export 2026-11-26; investment slide geometry and text re-synced from the live deck 2026-11-27). objectIds, geometry, speaker notes, the hidden slide and the ROADMAP slide are test scaffolding. Replace with real output via `npm run deck:dump`.",
  "presentationId": "1vgXhQgd6zspwH_iBpmeq_x4hsTTxLH9eXQR4KM4698A",
  "title": "K-GROUP AI OPTIMIZATION 2027 — Live CMS",
  "revisionId": "fixture-2026-11-26",
@@ -610,22 +610,22 @@
    "pageType": "SLIDE",
    "pageElements": [
     {
-     "objectId": "s05_e0",
+     "objectId": "s05_kicker",
      "size": {
       "width": {
-       "magnitude": 3657600,
+       "magnitude": 8636000,
        "unit": "EMU"
       },
       "height": {
-       "magnitude": 257175,
+       "magnitude": 304800,
        "unit": "EMU"
       }
      },
      "transform": {
       "scaleX": 1,
       "scaleY": 1,
-      "translateX": 365760,
-      "translateY": 308610,
+      "translateX": 254000,
+      "translateY": 114300,
       "unit": "EMU"
      },
      "shape": {
@@ -652,22 +652,22 @@
      }
     },
     {
-     "objectId": "s05_e1",
+     "objectId": "s05_title",
      "size": {
       "width": {
-       "magnitude": 5486400,
+       "magnitude": 8636000,
        "unit": "EMU"
       },
       "height": {
-       "magnitude": 514350,
+       "magnitude": 533400,
        "unit": "EMU"
       }
      },
      "transform": {
       "scaleX": 1,
       "scaleY": 1,
-      "translateX": 365760,
-      "translateY": 617220,
+      "translateX": 254000,
+      "translateY": 406400,
       "unit": "EMU"
      },
      "shape": {
@@ -694,22 +694,22 @@
      }
     },
     {
-     "objectId": "s05_e2",
+     "objectId": "s05_st0_l",
      "size": {
       "width": {
-       "magnitude": 2286000,
+       "magnitude": 2794000,
        "unit": "EMU"
       },
       "height": {
-       "magnitude": 771525,
+       "magnitude": 279400,
        "unit": "EMU"
       }
      },
      "transform": {
       "scaleX": 1,
       "scaleY": 1,
-      "translateX": 365760,
-      "translateY": 1234440,
+      "translateX": 254000,
+      "translateY": 1003300,
       "unit": "EMU"
      },
      "shape": {
@@ -730,32 +730,86 @@
           "content": "Initial Investment\n",
           "style": {}
          }
-        },
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st0_v",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 444500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 254000,
+      "translateY": 1270000,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
         {
-         "startIndex": 19,
-         "endIndex": 31,
+         "startIndex": 0,
+         "endIndex": 12,
          "paragraphMarker": {
           "style": {}
          }
         },
         {
-         "startIndex": 19,
-         "endIndex": 31,
+         "startIndex": 0,
+         "endIndex": 12,
          "textRun": {
           "content": "Rp147,86 jt\n",
           "style": {}
          }
-        },
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st0_u",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 254000,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 254000,
+      "translateY": 1689100,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
         {
-         "startIndex": 31,
-         "endIndex": 40,
+         "startIndex": 0,
+         "endIndex": 9,
          "paragraphMarker": {
           "style": {}
          }
         },
         {
-         "startIndex": 31,
-         "endIndex": 40,
+         "startIndex": 0,
+         "endIndex": 9,
          "textRun": {
           "content": "Per year\n",
           "style": {}
@@ -766,22 +820,22 @@
      }
     },
     {
-     "objectId": "s05_e3",
+     "objectId": "s05_st1_l",
      "size": {
       "width": {
-       "magnitude": 2286000,
+       "magnitude": 2794000,
        "unit": "EMU"
       },
       "height": {
-       "magnitude": 771525,
+       "magnitude": 279400,
        "unit": "EMU"
       }
      },
      "transform": {
       "scaleX": 1,
       "scaleY": 1,
-      "translateX": 3200400,
-      "translateY": 1234440,
+      "translateX": 3098800,
+      "translateY": 1003300,
       "unit": "EMU"
      },
      "shape": {
@@ -802,32 +856,86 @@
           "content": "Previous Proposal\n",
           "style": {}
          }
-        },
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st1_v",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 444500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 3098800,
+      "translateY": 1270000,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
         {
-         "startIndex": 18,
-         "endIndex": 29,
+         "startIndex": 0,
+         "endIndex": 11,
          "paragraphMarker": {
           "style": {}
          }
         },
         {
-         "startIndex": 18,
-         "endIndex": 29,
+         "startIndex": 0,
+         "endIndex": 11,
          "textRun": {
           "content": "Rp93,52 jt\n",
           "style": {}
          }
-        },
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st1_u",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 254000,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 3098800,
+      "translateY": 1689100,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
         {
-         "startIndex": 29,
-         "endIndex": 38,
+         "startIndex": 0,
+         "endIndex": 9,
          "paragraphMarker": {
           "style": {}
          }
         },
         {
-         "startIndex": 29,
-         "endIndex": 38,
+         "startIndex": 0,
+         "endIndex": 9,
          "textRun": {
           "content": "Per year\n",
           "style": {}
@@ -838,22 +946,22 @@
      }
     },
     {
-     "objectId": "s05_e4",
+     "objectId": "s05_st2_l",
      "size": {
       "width": {
-       "magnitude": 2286000,
+       "magnitude": 2794000,
        "unit": "EMU"
       },
       "height": {
-       "magnitude": 771525,
+       "magnitude": 279400,
        "unit": "EMU"
       }
      },
      "transform": {
       "scaleX": 1,
       "scaleY": 1,
-      "translateX": 6035040,
-      "translateY": 1234440,
+      "translateX": 5943600,
+      "translateY": 1003300,
       "unit": "EMU"
      },
      "shape": {
@@ -874,32 +982,86 @@
           "content": "Final Proposal:\n",
           "style": {}
          }
-        },
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st2_v",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 444500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 5943600,
+      "translateY": 1270000,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
         {
-         "startIndex": 16,
-         "endIndex": 27,
+         "startIndex": 0,
+         "endIndex": 11,
          "paragraphMarker": {
           "style": {}
          }
         },
         {
-         "startIndex": 16,
-         "endIndex": 27,
+         "startIndex": 0,
+         "endIndex": 11,
          "textRun": {
-          "content": "Rp37,06 jt\n",
+          "content": "Rp39,78 jt\n",
           "style": {}
          }
-        },
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_st2_u",
+     "size": {
+      "width": {
+       "magnitude": 2794000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 254000,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 5943600,
+      "translateY": 1689100,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
         {
-         "startIndex": 27,
-         "endIndex": 36,
+         "startIndex": 0,
+         "endIndex": 9,
          "paragraphMarker": {
           "style": {}
          }
         },
         {
-         "startIndex": 27,
-         "endIndex": 36,
+         "startIndex": 0,
+         "endIndex": 9,
          "textRun": {
           "content": "Per year\n",
           "style": {}
@@ -910,22 +1072,22 @@
      }
     },
     {
-     "objectId": "s05_e5",
+     "objectId": "s05_alloc",
      "size": {
       "width": {
-       "magnitude": 8229600,
+       "magnitude": 4064000,
        "unit": "EMU"
       },
       "height": {
-       "magnitude": 2057400,
+       "magnitude": 304800,
        "unit": "EMU"
       }
      },
      "transform": {
       "scaleX": 1,
       "scaleY": 1,
-      "translateX": 365760,
-      "translateY": 2263140,
+      "translateX": 330200,
+      "translateY": 2019300,
       "unit": "EMU"
      },
      "shape": {
@@ -946,25 +1108,52 @@
           "content": "Final tool allocation · per year\n",
           "style": {}
          }
-        },
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_teams",
+     "size": {
+      "width": {
+       "magnitude": 4089400,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 1612900,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 330200,
+      "translateY": 2336800,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
         {
-         "startIndex": 33,
-         "endIndex": 58,
+         "startIndex": 0,
+         "endIndex": 25,
          "paragraphMarker": {
           "style": {}
          }
         },
         {
-         "startIndex": 33,
-         "endIndex": 58,
+         "startIndex": 0,
+         "endIndex": 25,
          "textRun": {
-          "content": "BD · Total: Rp16.322.040\n",
+          "content": "BD · Total: Rp19.049.190\n",
           "style": {}
          }
         },
         {
-         "startIndex": 58,
-         "endIndex": 86,
+         "startIndex": 25,
+         "endIndex": 53,
          "paragraphMarker": {
           "style": {},
           "bullet": {
@@ -974,16 +1163,16 @@
          }
         },
         {
-         "startIndex": 58,
-         "endIndex": 86,
+         "startIndex": 25,
+         "endIndex": 53,
          "textRun": {
           "content": "ChatGPT Business 4.488.840 \n",
           "style": {}
          }
         },
         {
-         "startIndex": 86,
-         "endIndex": 110,
+         "startIndex": 53,
+         "endIndex": 77,
          "paragraphMarker": {
           "style": {},
           "bullet": {
@@ -993,16 +1182,16 @@
          }
         },
         {
-         "startIndex": 86,
-         "endIndex": 110,
+         "startIndex": 53,
+         "endIndex": 77,
          "textRun": {
           "content": "Claude Pro ×2 8.125.200\n",
           "style": {}
          }
         },
         {
-         "startIndex": 110,
-         "endIndex": 155,
+         "startIndex": 77,
+         "endIndex": 122,
          "paragraphMarker": {
           "style": {},
           "bullet": {
@@ -1012,46 +1201,65 @@
          }
         },
         {
-         "startIndex": 110,
-         "endIndex": 155,
+         "startIndex": 77,
+         "endIndex": 122,
          "textRun": {
           "content": "Google AI Pro 3.708.000 (NotebookLM bundled)\n",
           "style": {}
          }
         },
         {
-         "startIndex": 155,
-         "endIndex": 156,
+         "startIndex": 122,
+         "endIndex": 151,
+         "paragraphMarker": {
+          "style": {},
+          "bullet": {
+           "listId": "l",
+           "nestingLevel": 0
+          }
+         }
+        },
+        {
+         "startIndex": 122,
+         "endIndex": 151,
+         "textRun": {
+          "content": "GWI Plus (1 Month) 2.727.150\n",
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 151,
+         "endIndex": 152,
          "paragraphMarker": {
           "style": {}
          }
         },
         {
-         "startIndex": 155,
-         "endIndex": 156,
+         "startIndex": 151,
+         "endIndex": 152,
          "textRun": {
           "content": "\n",
           "style": {}
          }
         },
         {
-         "startIndex": 156,
-         "endIndex": 188,
+         "startIndex": 152,
+         "endIndex": 184,
          "paragraphMarker": {
           "style": {}
          }
         },
         {
-         "startIndex": 156,
-         "endIndex": 188,
+         "startIndex": 152,
+         "endIndex": 184,
          "textRun": {
           "content": "Marrakesh · Total: Rp20.739.240\n",
           "style": {}
          }
         },
         {
-         "startIndex": 188,
-         "endIndex": 215,
+         "startIndex": 184,
+         "endIndex": 211,
          "paragraphMarker": {
           "style": {},
           "bullet": {
@@ -1061,16 +1269,16 @@
          }
         },
         {
-         "startIndex": 188,
-         "endIndex": 215,
+         "startIndex": 184,
+         "endIndex": 211,
          "textRun": {
           "content": "ChatGPT Business 4.488.840\n",
           "style": {}
          }
         },
         {
-         "startIndex": 215,
-         "endIndex": 236,
+         "startIndex": 211,
+         "endIndex": 232,
          "paragraphMarker": {
           "style": {},
           "bullet": {
@@ -1080,16 +1288,16 @@
          }
         },
         {
-         "startIndex": 215,
-         "endIndex": 236,
+         "startIndex": 211,
+         "endIndex": 232,
          "textRun": {
           "content": "Claude Pro 4.062.600\n",
           "style": {}
          }
         },
         {
-         "startIndex": 236,
-         "endIndex": 267,
+         "startIndex": 232,
+         "endIndex": 263,
          "paragraphMarker": {
           "style": {},
           "bullet": {
@@ -1099,16 +1307,16 @@
          }
         },
         {
-         "startIndex": 236,
-         "endIndex": 267,
+         "startIndex": 232,
+         "endIndex": 263,
          "textRun": {
           "content": "Higgsfield Ultra 3K 10.969.020\n",
           "style": {}
          }
         },
         {
-         "startIndex": 267,
-         "endIndex": 288,
+         "startIndex": 263,
+         "endIndex": 284,
          "paragraphMarker": {
           "style": {},
           "bullet": {
@@ -1118,8 +1326,8 @@
          }
         },
         {
-         "startIndex": 267,
-         "endIndex": 288,
+         "startIndex": 263,
+         "endIndex": 284,
          "textRun": {
           "content": "ElevenLabs 1.218.780\n",
           "style": {}
@@ -1130,22 +1338,64 @@
      }
     },
     {
-     "objectId": "s05_e6",
+     "objectId": "s05_rule",
      "size": {
       "width": {
-       "magnitude": 3657600,
+       "magnitude": 8534400,
        "unit": "EMU"
       },
       "height": {
-       "magnitude": 514350,
+       "magnitude": 12700,
        "unit": "EMU"
       }
      },
      "transform": {
       "scaleX": 1,
       "scaleY": 1,
-      "translateX": 365760,
-      "translateY": 4526280,
+      "translateX": 330200,
+      "translateY": 4000500,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 1,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 1,
+         "textRun": {
+          "content": "\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_red_l",
+     "size": {
+      "width": {
+       "magnitude": 3937000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 279400,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 254000,
+      "translateY": 4064000,
       "unit": "EMU"
      },
      "shape": {
@@ -1166,43 +1416,28 @@
           "content": "Total cost reduction\n",
           "style": {}
          }
-        },
-        {
-         "startIndex": 21,
-         "endIndex": 27,
-         "paragraphMarker": {
-          "style": {}
-         }
-        },
-        {
-         "startIndex": 21,
-         "endIndex": 27,
-         "textRun": {
-          "content": "74,9%\n",
-          "style": {}
-         }
         }
        ]
       }
      }
     },
     {
-     "objectId": "s05_e7",
+     "objectId": "s05_sav_l",
      "size": {
       "width": {
-       "magnitude": 3657600,
+       "magnitude": 4064000,
        "unit": "EMU"
       },
       "height": {
-       "magnitude": 514350,
+       "magnitude": 279400,
        "unit": "EMU"
       }
      },
      "transform": {
       "scaleX": 1,
       "scaleY": 1,
-      "translateX": 4846320,
-      "translateY": 4526280,
+      "translateX": 4800600,
+      "translateY": 4064000,
       "unit": "EMU"
      },
      "shape": {
@@ -1223,49 +1458,88 @@
           "content": "Annual potential saving\n",
           "style": {}
          }
-        },
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_red_v",
+     "size": {
+      "width": {
+       "magnitude": 3937000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 482600,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 254000,
+      "translateY": 4305300,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
         {
-         "startIndex": 24,
-         "endIndex": 36,
+         "startIndex": 0,
+         "endIndex": 6,
          "paragraphMarker": {
           "style": {}
          }
         },
         {
-         "startIndex": 24,
-         "endIndex": 36,
+         "startIndex": 0,
+         "endIndex": 6,
          "textRun": {
-          "content": "Rp110,80 jt\n",
+          "content": "73,1%\n",
           "style": {}
          }
-        },
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s05_sav_v",
+     "size": {
+      "width": {
+       "magnitude": 4064000,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 482600,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 4800600,
+      "translateY": 4305300,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
         {
-         "startIndex": 36,
-         "endIndex": 37,
+         "startIndex": 0,
+         "endIndex": 12,
          "paragraphMarker": {
           "style": {}
          }
         },
         {
-         "startIndex": 36,
-         "endIndex": 37,
+         "startIndex": 0,
+         "endIndex": 12,
          "textRun": {
-          "content": "\n",
-          "style": {}
-         }
-        },
-        {
-         "startIndex": 37,
-         "endIndex": 38,
-         "paragraphMarker": {
-          "style": {}
-         }
-        },
-        {
-         "startIndex": 37,
-         "endIndex": 38,
-         "textRun": {
-          "content": "\n",
+          "content": "Rp108,07 jt\n",
           "style": {}
          }
         }
@@ -1999,6 +2273,48 @@
          "endIndex": 51,
          "textRun": {
           "content": "K-GROUP  /  MARRAKESH AI RESEARCH LAB     •     09\n",
+          "style": {}
+         }
+        }
+       ]
+      }
+     }
+    },
+    {
+     "objectId": "s08_scratch",
+     "size": {
+      "width": {
+       "magnitude": 3289300,
+       "unit": "EMU"
+      },
+      "height": {
+       "magnitude": 825500,
+       "unit": "EMU"
+      }
+     },
+     "transform": {
+      "scaleX": 1,
+      "scaleY": 1,
+      "translateX": 2717800,
+      "translateY": 5829300,
+      "unit": "EMU"
+     },
+     "shape": {
+      "shapeType": "TEXT_BOX",
+      "text": {
+       "textElements": [
+        {
+         "startIndex": 0,
+         "endIndex": 61,
+         "paragraphMarker": {
+          "style": {}
+         }
+        },
+        {
+         "startIndex": 0,
+         "endIndex": 61,
+         "textRun": {
+          "content": "Expected impact after ai ke BD—---------------------------\\>\n",
           "style": {}
          }
         }

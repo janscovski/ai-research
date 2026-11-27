@@ -96,9 +96,9 @@ section: investment
 kicker: 02 · INVESTMENT PROPOSAL
 stage: Initial Investment | Rp147,86 jt | Per year
 stage: Previous Proposal | Rp93,52 jt | Per year
-stage: Final Proposal | Rp37,06 jt | Per year
-reduction: Total cost reduction | 74,9%
-saving: Annual potential saving | Rp110,80 jt
+stage: Final Proposal | Rp39,78 jt | Per year
+reduction: Total cost reduction | 73,1%
+saving: Annual potential saving | Rp108,07 jt
 card: label | value | note
 ```
 
@@ -115,7 +115,7 @@ card: label | value | note
 | action_plan | `lab`, `prompt_label`, `prompt` (comma list ok), `flow` (a + b → c), `training` (label \| text), `body` |
 | verdict | `budget` (value \| label), `point`, `closing` |
 
-**Numbers** are shown exactly as typed in the deck (`Rp147,86 jt`, `Rp16.322.040`, `74,9%`). `lib/numbers.ts` parses them to integers (Indonesian format: dot for thousands, comma for decimals) only for bar widths and sanity checks. Count-up animations always end on the raw string.
+**Numbers** are shown exactly as typed in the deck (`Rp147,86 jt`, `Rp19.049.190`, `73,1%`). `lib/numbers.ts` parses them to integers (Indonesian format: dot for thousands, comma for decimals) only for bar widths and sanity checks. Count-up animations always end on the raw string.
 
 ## 4. Freshness: how it works and its limits
 
@@ -175,7 +175,7 @@ npm run deck:dump && npm test
 ## 9. Verification checklist
 
 **Verified (in this environment, fixture mode):**
-- [x] `npm test`: 24/24 pass. Parser: chapter order, hidden slide never renders, unknown section ignored and logged, footer numbers stripped, plates attached, missing keys fall back, notes override, Indonesian number parsing, deck totals add up (BD 16.322.040, Marrakesh 20.739.240, 147,86 − 37,06 = 110,80, 74,9%), count-up lands on the raw string. Data layer: cache fallback and error state.
+- [x] `npm test`: 26/26 pass. Parser: chapter order, hidden slide never renders, unknown section ignored and logged, footer numbers stripped, plates attached, missing keys fall back, notes override, Indonesian number parsing, deck totals add up (BD 19.049.190, Marrakesh 20.739.240, 147,86 − 39,79 = 108,07, 73,1%), labels in one row with values in the next are paired correctly, off-canvas scratch notes ignored, count-up lands on the raw string. Data layer: cache fallback and error state.
 - [x] `tsc --noEmit` clean. `next build` succeeds, and `/` is ISR with 1 m revalidate.
 - [x] Money figures in the server HTML match the deck strings exactly.
 - [x] Live-edit loop (fixture): editing the closing line in the fixture, then `POST /api/revalidate`, then the new text is served. Restoring it brings the original back.

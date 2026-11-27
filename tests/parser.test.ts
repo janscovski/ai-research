@@ -71,15 +71,28 @@ describe("parseDeck — content", () => {
 
   it("investment keeps money as raw display strings", () => {
     const b = block("investment");
-    expect(b.stages.map((s) => s.value)).toEqual(["Rp147,86 jt", "Rp93,52 jt", "Rp37,06 jt"]);
+    expect(b.stages.map((s) => s.value)).toEqual(["Rp147,86 jt", "Rp93,52 jt", "Rp39,78 jt"]);
     expect(b.stages.every((s) => s.unit === "Per year")).toBe(true);
     expect(b.teams.map((t) => [t.name, t.total])).toEqual([
-      ["BD", "Rp16.322.040"],
+      ["BD", "Rp19.049.190"],
       ["Marrakesh", "Rp20.739.240"],
     ]);
     expect(b.teams[0].items[2]).toEqual({ name: "Google AI Pro", amount: "3.708.000", note: "NotebookLM bundled" });
-    expect(b.reduction).toEqual({ label: "Total cost reduction", value: "74,9%" });
-    expect(b.saving).toEqual({ label: "Annual potential saving", value: "Rp110,80 jt" });
+    expect(b.teams[0].items[3]).toEqual({ name: "GWI Plus (1 Month)", amount: "2.727.150" });
+    expect(b.reduction).toEqual({ label: "Total cost reduction", value: "73,1%" });
+    expect(b.saving).toEqual({ label: "Annual potential saving", value: "Rp108,07 jt" });
+  });
+
+  it("pairs labels with values when the deck puts labels in one row and values in the next", () => {
+    // Live deck: separate text boxes, "Total cost reduction | Annual potential saving" then "73,1% | Rp108,07 jt".
+    const b = block("investment");
+    expect(b.stages.map((s) => s.label)).toEqual(["Initial Investment", "Previous Proposal", "Final Proposal"]);
+    expect(b.reduction?.value).toBe("73,1%");
+    expect(b.saving?.value).toBe("Rp108,07 jt");
+  });
+
+  it("ignores scratch notes parked outside the slide", () => {
+    expect(JSON.stringify(deck)).not.toContain("Expected impact");
   });
 
   it("investment line items add up to the team totals in the deck", () => {
@@ -153,13 +166,19 @@ describe("Indonesian numbers", () => {
   });
 
   it("deck totals are internally consistent", () => {
-    const [initial, , final] = block("investment").stages.map((s) => parseRupiah(s.value)!);
-    expect(initial - final).toBe(parseRupiah("Rp110,80 jt"));
-    expect(Math.round(((initial - final) / initial) * 1000) / 10).toBe(74.9);
+    // The deck derives its figures from the exact team totals (Rp39.788.430), then shows
+    // them rounded to 2 decimals in "jt", so compare at that precision.
+    const b = block("investment");
+    const [initial, , final] = b.stages.map((s) => parseRupiah(s.value)!);
+    const exactFinal = b.teams.reduce((a, t) => a + parseRupiah(t.total!)!, 0);
+    const jt = (n: number) => Math.floor(n / 10_000) / 100;
+    expect(jt(exactFinal)).toBe(final / 1_000_000);
+    expect(jt(initial - exactFinal)).toBe(parseRupiah(b.saving!.value)! / 1_000_000);
+    expect(Math.round(((initial - exactFinal) / initial) * 1000) / 10).toBe(parsePercent(b.reduction!.value));
   });
 
   it("count-up formatter lands exactly on the raw string", () => {
-    for (const raw of ["Rp147,86 jt", "Rp16.322.040", "74,9%", "312", "Rp37,06 jt"]) {
+    for (const raw of ["Rp147,86 jt", "Rp19.049.190", "73,1%", "312", "Rp39,78 jt"]) {
       const p = numericParts(raw)!;
       expect(formatLike(p, p.value)).toBe(raw);
     }
